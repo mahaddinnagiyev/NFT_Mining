@@ -1,7 +1,7 @@
 import { StoreNftDTO } from "./dto/nst.dto";
 
 export const storeNewNft = async (body: StoreNftDTO) => {
-  const response = await fetch("http://localhost:3000/nft/store", {
+  const response = await fetch("${process.env.BACKEND_URL}/nft/store", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -35,7 +35,7 @@ export const getNftByUserWalletAddress = async (
   }
 }> => {
   const response = await fetch(
-    `http://localhost:3000/nft/gallery/${userWalletAddress}`,
+    `${process.env.BACKEND_URL}/nft/gallery/${userWalletAddress}`,
     {
       method: "GET",
       headers: {
