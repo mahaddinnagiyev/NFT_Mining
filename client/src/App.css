@@ -1,38 +1,176 @@
-.App {
-  text-align: center;
+body {
+  background-image: linear-gradient(to right, #000, #111827);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.app-container {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.main-content {
+  padding: 120px 30px 50px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero-section {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  margin-bottom: 30px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.gradient-text {
+  background-image: linear-gradient(to right, #eb489a, #8b5bf5);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: block;
+  font-weight: 600;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  color: #9ca3af;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.hero-btns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+
+.cta-button {
+  background-image: linear-gradient(to right, #eb489a, #8b5bf5);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.1rem;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+}
+
+.hero-btn-2 {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* NFT Gallery */
+.collections-section {
+  margin-top: 50px;
+}
+
+.nft-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.nft-card {
+  background: #1f2937;
+  border-radius: 15px;
+  padding: 25px;
+  max-width: 350px;
+  transition: transform 0.3s ease;
+}
+
+.nft-card:hover {
+  transform: translateY(-5px);
+}
+
+.nft-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.nft-title {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.nft-description {
+  color: #9ca3af;
+  line-height: 1.6;
+}
+
+/* Mint Form */
+.mint-section {
+  margin-top: 80px;
+}
+
+.mint-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 15px;
+  background-image: linear-gradient(to right, #0a0f19, #0e1420);
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: #111827;
+  color: #fff;
+}
+
+.mint-button {
+  background-image: linear-gradient(to right, #eb489a, #8b5bf5);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.1rem;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.mint-button:hover {
+  transform: scale(1.05);
+}
+
+.nft-image {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
 }
