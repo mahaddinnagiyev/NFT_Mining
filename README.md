@@ -1,4 +1,4 @@
-# NFT Mining App
+# NFT Mining App!
 
 #### Project video link: <a href="https://www.loom.com/share/38ce7bdbec934af789eff9f1a4a3cf76?sid=5bd58470-2770-4d79-866c-92c7ea8339e5">Click Here!</a>
 
